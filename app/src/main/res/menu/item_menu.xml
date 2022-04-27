@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/beranda"
+        android:title="Beranda"
+        android:enabled="true"
+        android:icon="@drawable/ic_beranda"/>
+
+    <item android:id="@+id/aplikasi"
+        android:title="Aplikasi"
+        android:enabled="true"
+        android:icon="@drawable/ic_aplikasi"/>
+
+    <item android:id="@+id/terapi"
+        android:title="Terapi"
+        android:enabled="true"
+        android:icon="@drawable/ic_terapi"/>
+
+    <item android:id="@+id/artikel"
+        android:title="Artikel"
+        android:enabled="true"
+        android:icon="@drawable/ic_artikel"/>
+
+</menu>
