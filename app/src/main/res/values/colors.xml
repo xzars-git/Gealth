@@ -17,5 +17,6 @@
     <color name="redVelvet">#FF4545</color>
     <color name="peach">#FFECEC</color>
     <color name="softGreen">#DEFFEA</color>
+    <color name="trans">#00000000 </color>.
 
 </resources>
