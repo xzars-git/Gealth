@@ -1,14 +1,13 @@
 package com.example.myapplication;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Registration extends AppCompatActivity {
+public class Login extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.registration);
+        setContentView(R.layout.login);
     }
 }

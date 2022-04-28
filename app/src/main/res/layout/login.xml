@@ -4,14 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".Login">
     <ImageView
         android:id="@+id/imageViewOnboarding1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
-        tools:srcCompat="@drawable/logo"/>
+        android:src="@drawable/logo"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="50dp"
