@@ -8,6 +8,7 @@
         <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/drawable/edittext_rectangle1.xml" value="0.12604166666666666" />
         <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/drawable/home_green_rectangle.xml" value="0.18645833333333334" />
         <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/drawable/ic_aplikasi.xml" value="0.18645833333333334" />
+        <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/drawable/ic_application_rectangle.xml" value="0.18333333333333332" />
         <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/drawable/ic_btn_daftar.xml" value="0.11510416666666666" />
         <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/drawable/ic_edittext_regis.xml" value="0.10364583333333334" />
         <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/drawable/ic_edittext_registration.xml" value="0.11875" />
@@ -16,6 +17,7 @@
         <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/drawable/ic_itemselectornavigation.xml" value="0.18645833333333334" />
         <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/drawable/ic_launcher_background.xml" value="0.23692307692307693" />
         <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/drawable/ic_numberpicker_arrow.xml" value="0.18645833333333334" />
+        <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/drawable/ic_onboardingnext.xml" value="0.18333333333333332" />
         <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/drawable/ic_registration_rectangle.xml" value="0.15" />
         <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/drawable/ic_settings.xml" value="0.18645833333333334" />
         <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/drawable/ic_sisawaktumain.xml" value="0.18645833333333334" />
@@ -32,11 +34,13 @@
         <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/layout/linkapp_confirmation.xml" value="0.33" />
         <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/layout/login.xml" value="0.33" />
         <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/layout/navigationbottombar.xml" value="0.25" />
-        <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/layout/onboarding1.xml" value="0.33" />
+        <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/layout/onboarding.xml" value="0.3611111111111111" />
+        <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/layout/onboarding1.xml" value="0.22" />
         <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/layout/onboarding2.xml" value="0.25" />
-        <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/layout/onboarding3.xml" value="0.25" />
-        <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/layout/registration.xml" value="0.1671875" />
-        <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/layout/splashscreen.xml" value="0.1671875" />
+        <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/layout/onboarding3.xml" value="0.22" />
+        <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/layout/onboardingsliderlayout.xml" value="0.21" />
+        <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/layout/registration.xml" value="0.25" />
+        <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/layout/splashscreen.xml" value="0.1" />
         <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/menu/item_menu.xml" value="0.25" />
       </map>
     </option>

@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:flow_horizontalAlign="center"
+    android:orientation="vertical">
+
     <ImageView
-        android:id="@+id/imageViewOnboarding1"
+        android:id="@+id/imageViewOnboarding"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        tools:srcCompat="@drawable/image_onboarding1"/>
+        android:src="@drawable/image_onboardingone"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/onboardingTitle"
         android:text="Tahukah Kamu ?"
         android:textSize="24sp"
         android:fontFamily="@font/poppins_bold"
@@ -27,17 +27,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
-        android:text="Penggunaan gadget  berlebih dapat&#10;menyebabkan dampak negatif bagi&#10;kesehatan tubuh. "
+        android:id="@+id/onboardingDescription"
         android:lineSpacingExtra="6sp"
-        android:layout_marginTop="30dp"
+        android:text="Penggunaan gadget  berlebih dapat&#10;menyebabkan dampak negatif bagi&#10;kesehatan tubuh."
+        android:layout_marginTop="15dp"
         android:fontFamily="@font/poppins_medium"
         android:textColor="@color/darkGrey"/>
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Lanjut"
-        android:layout_gravity="center"
-        android:layout_marginTop="60dp"/>
 
 </LinearLayout>
