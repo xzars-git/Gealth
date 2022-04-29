@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Gealth</string>
+    <string name="registration_text"><u>Masuk</u></string>
+    <string name="lupa_katasandi"><u>Lupa kata sandi?</u></string>
+    <string name="daftar"><u>Daftar disini</u></string>
+    <string name="onboardingDescriptionText1">Penggunaan gadget  berlebih dapat\nmenyebabkan dampak negatif bagi\nkesehatan tubuh.</string>
+    <string name="onboardingDescriptionText2">Gealth menyediakan gerakan\nringan untuk terapi mandiri saat\nterlalu lama menggunakan gadget.</string>
+    <string name="onboardingDescriptionText3"> </string>
+    <string name="onboardingHeadingText1">Tahukah Kamu ?</string>
+    <string name="onboardingHeadingText2">Gerakan Terapi</string>
+    <string name="onboardingHeadingText3">Mulai Langkah Awalmu&#10;Bersama Kami</string>
+    <string name="heading1">Kepala tegak, mata melihat ke atas (langit-langit), kemudian melihat
+ke lantai. Ulangi 5-10 kali.</string>
+    <string name="heading2"> Gerakan Bola mata kekanan dan kekiri. Usahakan seperti ingin melihat
+telinga. Ulangi gerakan sebanyak 5-10 kali. </string>
+    <string name="heading3">Gerakan bola mata ke atas. Tahan bola mata di atas, kemudian gerakan ke kiri atas dan ke kanan atas. Ulangi gerakan sebanyak 5-10 kali.</string>
+
+
+</resources>
