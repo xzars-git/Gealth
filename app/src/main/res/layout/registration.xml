@@ -135,18 +135,23 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <EditText
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:padding="10dp"
-                android:id="@+id/editText_email"
-                android:paddingStart="20dp"
-                android:textColor="@color/softGrey"
-                android:hint="E-mail"
-                android:textColorHint="@color/softGrey"
-                android:fontFamily="@font/poppins_regular"
-                android:layout_marginTop="25dp"
-                android:background="@drawable/ic_edittext_regis"/>
+                android:layout_height="wrap_content"
+                style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editText_email"
+                    android:background="@drawable/ic_edittext_registration"
+                    android:paddingStart="20dp"
+                    android:textColor="@color/softGrey"
+                    android:hint="E-mail"
+                    android:textColorHint="@color/softGrey"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_marginTop="25dp"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -155,7 +160,7 @@
                 app:hintEnabled="false"
                 android:textColorHint="@color/softGrey"
                 android:layout_height="50dp">
-                <EditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:id="@+id/editText_password"
@@ -179,7 +184,7 @@
                 android:textColorHint="@color/softGrey"
                 app:hintEnabled="false"
                 android:layout_height="50dp">
-                <EditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:id="@+id/editText_confirmpassword"
@@ -201,6 +206,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="50dp"
+                android:id="@+id/btn_daftar"
                 android:background="@drawable/ic_btn_daftar"
                 android:text="Daftar"
                 android:padding="8dp"
@@ -231,6 +237,7 @@
                     android:textSize="16sp"/>
                 <TextView
                     android:layout_width="wrap_content"
+                    android:id="@+id/clickAble_TextViewLogin"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins_regular"
                     android:text="@string/registration_text"
