@@ -4,7 +4,9 @@ package com.example.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -28,5 +30,10 @@ public class Home extends AppCompatActivity {
         }else {
             user_name.setText("Login Gagal!");
         }
+    }
+
+    public void terapi(View view) {
+        Intent terapi = new Intent(this, Terapi.class);
+        startActivity(terapi);
     }
 }

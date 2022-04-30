@@ -47,6 +47,7 @@
                 </LinearLayout>
 
                 <androidx.appcompat.widget.AppCompatButton
+                    android:onClick="terapi"
                     android:layout_width="30sp"
                     android:layout_height="30sp"
                     android:layout_alignParentRight="true"
