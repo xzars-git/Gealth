@@ -37,7 +37,7 @@ public class TerapiMata extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                if (getitem(0) < 2)
+                if (getitem(0) < 7)
                     mSLideViewPager.setCurrentItem(getitem(1), true);
                 else {
 
@@ -65,7 +65,7 @@ public class TerapiMata extends AppCompatActivity {
 
     public void setUpindicator(int position) {
 
-        dots = new TextView[3];
+        dots = new TextView[8];
         mDotLayout.removeAllViews();
 
         for (int i = 0; i < dots.length; i++) {

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:orientation="vertical"
     android:padding="20dp"
     tools:context=".Terapi">
@@ -28,6 +29,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/white"
                 android:layout_marginTop="35dp"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="5dp">
@@ -49,6 +51,7 @@
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         android:fontFamily="@font/poppins_regular"
+                        android:textColor="@color/softGrey"
                         android:text="Hindari dampak buruk akibat terlalu lama menatap layar dengan mengikuti gerakan senam mata sederhana" />
 
                     <Button
@@ -68,6 +71,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/white"
                 android:layout_marginTop="35dp"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="5dp">
@@ -81,7 +85,7 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="200dp"
-                        android:src="@drawable/terapi_mata_cardview" />
+                        android:src="@drawable/terapi_tangan_cardview" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -89,7 +93,8 @@
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         android:fontFamily="@font/poppins_regular"
-                        android:text="Hindari dampak buruk akibat terlalu lama menatap layar dengan mengikuti gerakan senam mata sederhana" />
+                        android:textColor="@color/softGrey"
+                        android:text="Terapi ini dapat membantu mencegah Cubital Tunnel Syndrome(CTS) karena penggunaan gadget yang berlebihan" />
 
                     <Button
                         android:id="@+id/btnTerapiTangan"
