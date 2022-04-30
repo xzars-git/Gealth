@@ -9,6 +9,7 @@
     <string name="onboardingHeadingText1">Tahukah Kamu ?</string>
     <string name="onboardingHeadingText2">Gerakan Terapi</string>
     <string name="onboardingHeadingText3">Mulai Langkah Awalmu&#10;Bersama Kami</string>
+    <string name="kirimUlangKode"><u>Kirim ulang kode verifikasi</u></string>
 
 
 </resources>

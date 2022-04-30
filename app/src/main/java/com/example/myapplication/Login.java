@@ -66,6 +66,7 @@ public class Login extends AppCompatActivity {
 
     private void login(String email, String Password){
         //Login Code
+        progressDialog.show();
         mAuth.signInWithEmailAndPassword(email, Password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
@@ -78,6 +79,8 @@ public class Login extends AppCompatActivity {
                 }else {
                     Toast.makeText(getApplicationContext(), "Login Gagal!", Toast.LENGTH_SHORT).show();
                 }
+
+                progressDialog.dismiss();
             }
         });
     }

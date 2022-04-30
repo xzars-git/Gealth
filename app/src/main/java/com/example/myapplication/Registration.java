@@ -110,6 +110,7 @@ public class Registration extends AppCompatActivity {
                 }else {
                     Toast.makeText(getApplicationContext(), task.getException().getLocalizedMessage(), Toast.LENGTH_SHORT).show();
                 }
+                progressDialog.dismiss();
             }
         });
     }

@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".BuatKataSandiBaru"
+            android:exported="true" />
+        <activity
+            android:name=".LupaPassword_EmailConfirmation"
+            android:exported="true" />
+        <activity
             android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>
@@ -20,14 +26,14 @@
         </activity>
         <activity
             android:name=".Onboarding"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".Login"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity android:name=".Registration" />
         <activity
             android:name=".Home"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity android:name=".Registration" />
     </application>
 
