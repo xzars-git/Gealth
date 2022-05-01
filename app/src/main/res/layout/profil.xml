@@ -192,8 +192,7 @@
             android:textSize="16dp"
             android:drawableLeft="@drawable/ic_key"
             android:textColor="@color/darkGrey"
-            android:layout_marginTop="10dp"
-            android:background="#000000000"/>
+            android:layout_marginTop="10dp"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="60dp"

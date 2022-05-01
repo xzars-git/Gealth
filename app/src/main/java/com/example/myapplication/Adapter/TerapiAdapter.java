@@ -22,14 +22,25 @@ public class TerapiAdapter extends PagerAdapter {
             R.drawable.mata1,
             R.drawable.mata2,
             R.drawable.mata3,
+            R.drawable.mata4,
+            R.drawable.mata5,
+            R.drawable.mata6,
+            R.drawable.mata7,
+            R.drawable.mata8,
 
     };
 
     int[] headings = {
 
-            R.string.heading1,
-            R.string.heading2,
-            R.string.heading3
+            R.string.mataHeadingText1,
+            R.string.mataHeadingText2,
+            R.string.mataHeadingText3,
+            R.string.mataHeadingText4,
+            R.string.mataHeadingText5,
+            R.string.mataHeadingText6,
+            R.string.mataHeadingText7,
+            R.string.mataHeadingText8,
+
 
 
     };

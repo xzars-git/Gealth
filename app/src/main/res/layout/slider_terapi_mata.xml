@@ -3,9 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="20dp"
     tools:context=".TerapiMata">
 
 
@@ -14,7 +13,7 @@
         android:id="@+id/titleText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="60dp"
         android:text="Kepala tegak, mata melihat ke atas (langit-langit), kemudian melihat
 ke lantai. Ulangi 5-10 kali."
         android:textColor="@color/darkGrey"
@@ -26,7 +25,7 @@ ke lantai. Ulangi 5-10 kali."
         android:id="@+id/titleImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="60dp"
         android:layout_gravity="center"
         android:src="@drawable/mata1"/>
 </LinearLayout>
