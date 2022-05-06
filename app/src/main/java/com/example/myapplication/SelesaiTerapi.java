@@ -18,4 +18,8 @@ public class SelesaiTerapi extends AppCompatActivity {
         Intent lagi = new Intent(this, Terapi.class);
         startActivity(lagi);
     }
+
+    public void btnKembali(View view) {
+        finish();
+    }
 }

@@ -15,8 +15,13 @@ public class Terapi extends AppCompatActivity {
         setContentView(R.layout.activity_terapi);
     }
 
-    public void btnMulai(View view) {
-        Intent mulai = new Intent(this, TerapiMata.class);
-        startActivity(mulai);
+    public void btnMulaiMata(View view) {
+        Intent mulaiMata = new Intent(this, TerapiMata.class);
+        startActivity(mulaiMata);
+    }
+
+    public void btnMulaiTangan(View view) {
+        Intent mulaiTangan = new Intent(this, TerapiTangan.class);
+        startActivity(mulaiTangan);
     }
 }

@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".TerapiTangan"
+            android:exported="false" />
+        <activity
             android:name=".SelesaiTerapi"
             android:exported="false" />
         <activity
@@ -36,7 +39,7 @@
         <activity android:name=".Registration" />
         <activity
             android:name=".Home"
-            android:exported="true" />/>
+            android:exported="true" />
     </application>
 
 </manifest>
