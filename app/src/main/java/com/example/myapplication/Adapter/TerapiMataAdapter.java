@@ -14,7 +14,7 @@ import androidx.viewpager.widget.PagerAdapter;
 
 import com.example.myapplication.R;
 
-public class TerapiAdapter extends PagerAdapter {
+public class TerapiMataAdapter extends PagerAdapter {
     Context context;
 
     int[] images = {
@@ -46,7 +46,7 @@ public class TerapiAdapter extends PagerAdapter {
     };
 
 
-    public TerapiAdapter(Context context) {
+    public TerapiMataAdapter(Context context) {
 
         this.context = context;
 

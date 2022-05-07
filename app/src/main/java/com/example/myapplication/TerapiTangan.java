@@ -12,21 +12,21 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.example.myapplication.Adapter.TerapiMataAdapter;
+import com.example.myapplication.Adapter.TerapiTanganAdapter;
 
-public class TerapiMata extends AppCompatActivity {
+public class TerapiTangan extends AppCompatActivity {
 
     LinearLayout mDotLayout;
     ImageButton nextbtn;
     ViewPager mSLideViewPager;
 
     TextView[] dots;
-    TerapiMataAdapter viewPagerAdapter;
+    TerapiTanganAdapter viewPagerAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_terapi_mata);
+        setContentView(R.layout.activity_terapi_tangan);
 
         nextbtn = findViewById(R.id.nextButton);
 
@@ -35,11 +35,11 @@ public class TerapiMata extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                if (getitem(0) < 7)
+                if (getitem(0) < 14)
                     mSLideViewPager.setCurrentItem(getitem(1), true);
                 else {
 
-                    Intent i = new Intent(TerapiMata.this, SelesaiTerapi.class);
+                    Intent i = new Intent(TerapiTangan.this, SelesaiTerapi.class);
                     startActivity(i);
                     finish();
 
@@ -52,7 +52,7 @@ public class TerapiMata extends AppCompatActivity {
         mSLideViewPager = (ViewPager) findViewById(R.id.slideViewPager);
         mDotLayout = (LinearLayout) findViewById(R.id.indicator_layout);
 
-        viewPagerAdapter = new TerapiMataAdapter(this);
+        viewPagerAdapter = new TerapiTanganAdapter(this);
 
         mSLideViewPager.setAdapter(viewPagerAdapter);
 
@@ -63,7 +63,7 @@ public class TerapiMata extends AppCompatActivity {
 
     public void setUpindicator(int position) {
 
-        dots = new TextView[8];
+        dots = new TextView[15];
         mDotLayout.removeAllViews();
 
         for (int i = 0; i < dots.length; i++) {
