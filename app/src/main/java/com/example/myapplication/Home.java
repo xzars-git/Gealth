@@ -21,7 +21,7 @@ public class Home extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.home_screen);
+        //setContentView(R.layout.home_screen);
         user_name = findViewById(R.id.user_name);
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
 

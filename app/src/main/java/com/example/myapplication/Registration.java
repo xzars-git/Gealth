@@ -115,7 +115,7 @@ public class Registration extends AppCompatActivity {
     }
 
     private void reload(){
-        Intent i = new Intent(Registration.this, Home.class);
+        Intent i = new Intent(Registration.this, MainActivity.class);
         startActivity(i);
         finish();
     }

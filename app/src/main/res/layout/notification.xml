@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/white"
     tools:context=".Registration">
 
 
@@ -50,6 +51,7 @@
                     android:layout_height="wrap_content"
                     android:text="Kamu telah mencapai batas waktu harian, jangan lupa untuk melakukan terapi"
                     android:textAlignment="textStart"
+                    android:textColor="@color/darkGrey"
                     android:fontFamily="@font/poppins_medium"
                     android:textSize="14dp"
                     android:lineSpacingExtra="4dp"/>
@@ -78,6 +80,7 @@
                     android:layout_height="wrap_content"
                     android:text="Kamu telah mencapai batas waktu harian, jangan lupa untuk melakukan terapi"
                     android:textAlignment="textStart"
+                    android:textColor="@color/darkGrey"
                     android:fontFamily="@font/poppins_medium"
                     android:textSize="14dp"
                     android:lineSpacingExtra="4dp"/>

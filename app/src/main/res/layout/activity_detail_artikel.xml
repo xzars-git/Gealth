@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".DetailArtikel">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_backbtn"
+                android:id="@+id/backBtn"
+                android:layout_marginTop="25dp"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="30dp"
+                android:id="@+id/title"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="20dp"
+                android:textColor="@color/darkGrey"
+                android:textAlignment="center"
+                android:text="Durasi yang disarankan menggunakan smartphone"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_detailartikel"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginTop="30dp"
+                android:textSize="14dp"
+                android:textColor="@color/darkGrey"
+                android:text="   Anak usia 2–5 tahun disarankan mengakses gadget hanya 1 jam per hari, itu pun sebaiknya program yang berkualitas.&#10;Anak usia 6 tahun ke atas boleh bermain gadget, tapi dengan waktu yang sudah disepakati bersama orang tua, misalnya pada akhir pekan atau maksimal 2 jam per hari.&#10;Remaja, waktu ideal untuk melakukan aktivitas online atau bermain gadget dalam sehari adalah 257 menit atau sekitar 4 jam 17 menit."
+                android:layout_marginHorizontal="25dp"
+                android:lineSpacingExtra="5dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

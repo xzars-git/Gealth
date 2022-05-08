@@ -15,6 +15,8 @@ import androidx.appcompat.widget.AppCompatImageButton;
 import androidx.viewpager.widget.ViewPager;
 
 import com.example.myapplication.Adapter.OnboardingAdapter;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class Onboarding  extends AppCompatActivity {
 
@@ -22,6 +24,7 @@ public class Onboarding  extends AppCompatActivity {
     LinearLayout dotLayout;
     Button skipBtn, daftarBtn;
     TextView txtMasuk;
+    private FirebaseAuth mAuth;
 
     AppCompatImageButton nextBtn;
 
@@ -31,12 +34,15 @@ public class Onboarding  extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
+        isLogin();
         setContentView(R.layout.onboarding);
 
         nextBtn = findViewById(R.id.nextbtnOnboarding);
         daftarBtn = findViewById(R.id.btn_daftar);
         skipBtn = findViewById(R.id.onboardingSkipButton);
         txtMasuk = findViewById(R.id.textViewMasuk);
+
+
 
         nextBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -131,5 +137,14 @@ public class Onboarding  extends AppCompatActivity {
 
     private int getItem(int i){
         return slideViewPager.getCurrentItem() + i;
+    }
+
+    void isLogin(){
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        if (user != null) {
+            // User is signed in
+            // Start home activity
+            startActivity(new Intent(Onboarding.this, MainActivity.class));
+        }
     }
 }

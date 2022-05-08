@@ -127,4 +127,5 @@ posisi gerakan tersebut selama 5–
     <string name="ubahprofil"><u>Ubah Profil</u></string>
     <string name="ubahkatasandi"><u>Ubah kata sandi</u></string>
     <string name="kirim_ulang_kode">Kirim ulang kode</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

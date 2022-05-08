@@ -12,16 +12,7 @@ public class Terapi extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_terapi);
+        setContentView(R.layout.fragment_terapi);
     }
 
-    public void btnMulaiMata(View view) {
-        Intent mulaiMata = new Intent(this, TerapiMata.class);
-        startActivity(mulaiMata);
-    }
-
-    public void btnMulaiTangan(View view) {
-        Intent mulaiTangan = new Intent(this, TerapiTangan.class);
-        startActivity(mulaiTangan);
-    }
 }

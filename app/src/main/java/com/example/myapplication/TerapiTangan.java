@@ -1,10 +1,12 @@
 package com.example.myapplication;
 
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
@@ -23,6 +25,7 @@ public class TerapiTangan extends AppCompatActivity {
     TextView[] dots;
     TerapiTanganAdapter viewPagerAdapter;
 
+    @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,6 +64,7 @@ public class TerapiTangan extends AppCompatActivity {
 
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.M)
     public void setUpindicator(int position) {
 
         dots = new TextView[15];
@@ -88,6 +92,7 @@ public class TerapiTangan extends AppCompatActivity {
 
         }
 
+        @RequiresApi(api = Build.VERSION_CODES.M)
         @Override
         public void onPageSelected(int position) {
 

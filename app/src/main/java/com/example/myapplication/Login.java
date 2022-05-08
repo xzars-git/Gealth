@@ -23,6 +23,7 @@ public class Login extends AppCompatActivity {
     TextView clickAble_TextViewLupaKataSandi, clickAble_TextViewDaftar;
     Button btn_login;
     private FirebaseAuth mAuth;
+    public boolean isLogin = false;
     ProgressDialog progressDialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,7 +59,7 @@ public class Login extends AppCompatActivity {
                 if(editText_loginemail.getText().length()>0 && editText_loginpassword.getText().length()>0){
                     login(editText_loginemail.getText().toString(), editText_loginpassword.getText().toString());
                 }else {
-                    Toast.makeText(getApplicationContext(), "Silahkan semua data", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Silahkan isi semua data", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -72,6 +73,7 @@ public class Login extends AppCompatActivity {
                 if(task.isSuccessful() && task.getResult()!=null){
                     if(task.getResult().getUser()!=null){
                         reload();
+                        isLogin = true;
                     }else {
                         Toast.makeText(getApplicationContext(), "Login Gagal!", Toast.LENGTH_SHORT).show();
                     }
@@ -85,7 +87,7 @@ public class Login extends AppCompatActivity {
 
 
     private void reload(){
-        Intent i = new Intent(Login.this, Home.class);
+        Intent i = new Intent(Login.this, MainActivity.class);
         startActivity(i);
         finish();
     }
