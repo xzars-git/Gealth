@@ -9,6 +9,6 @@ public class LupaPassword_EmailConfirmation extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.lupapassword_emailconfirmation);
+        setContentView(R.layout.temp_lupapassword_emailconfirmation);
     }
 }
