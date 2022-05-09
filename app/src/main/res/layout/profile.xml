@@ -5,7 +5,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".Profil">
+    android:background="@color/white"
+    tools:context=".Profile">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,40 +24,30 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_semibold"
-                android:text="Profil"
-                android:layout_marginTop="20dp"
                 android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Profile"
                 android:textColor="@color/white"
-                android:textSize="20sp"/>
+                android:textSize="20sp" />
+
             <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/btn_back"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/ic_backbtn"
-                android:id="@+id/btn_back"
-                android:backgroundTint="@color/white"
-                android:layout_marginTop="25dp"
                 android:layout_marginLeft="20dp"
-                />
+                android:layout_marginTop="25dp"
+                android:background="@drawable/ic_backbtn"
+                android:backgroundTint="@color/white" />
+
             <ImageView
                 android:id="@+id/imageView_photoprofil"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
                 android:layout_below="@id/btn_back"
+                android:layout_centerHorizontal="true"
                 android:layout_marginTop="30dp"
                 android:src="@drawable/profil_photo" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/ubahprofil"
-                android:fontFamily="@font/poppins_regular"
-                android:layout_marginTop="20dp"
-                android:textColor="@color/white"
-                android:textSize="16dp"
-                android:layout_centerHorizontal="true"
-                android:layout_below="@id/imageView_photoprofil"/>
         </RelativeLayout>
         <TextView
             android:layout_width="wrap_content"
@@ -67,35 +58,6 @@
             android:fontFamily="@font/poppins_semibold"
             android:layout_marginTop="20dp"
             android:textSize="20sp" />
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
-            android:orientation="vertical">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Nama Pengguna"
-                android:textSize="16dp"
-                android:layout_marginLeft="20dp"
-                android:fontFamily="@font/poppins_regular"
-                android:textColor="@color/darkGrey"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView_namapengguna"
-                android:text="Sugiono"
-                android:fontFamily="@font/poppins_medium"
-                android:textSize="16dp"
-                android:layout_marginLeft="20dp"
-                android:textColor="@color/darkGrey"/>
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1sp"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginTop="5dp"
-                android:background="@color/softGrey"/>
-        </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -125,35 +87,7 @@
                 android:layout_marginTop="5dp"
                 android:background="@color/softGrey"/>
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
-            android:orientation="vertical">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Tanggal Lahir"
-                android:textSize="16dp"
-                android:layout_marginLeft="20dp"
-                android:fontFamily="@font/poppins_regular"
-                android:textColor="@color/darkGrey"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView_tanggallahir"
-                android:text="19 Juli 2001"
-                android:fontFamily="@font/poppins_medium"
-                android:textSize="16dp"
-                android:layout_marginLeft="20dp"
-                android:textColor="@color/darkGrey"/>
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1sp"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginTop="5dp"
-                android:background="@color/softGrey"/>
-        </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -196,7 +130,8 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:text="Simpan"
+            android:text="Update"
+            android:id="@+id/btn_update"
             android:layout_marginTop="30dp"
             android:fontFamily="@font/poppins_medium"
             android:layout_marginHorizontal="20dp"

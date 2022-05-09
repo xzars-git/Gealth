@@ -61,6 +61,7 @@ public class TerapiTangan extends AppCompatActivity {
 
         setUpindicator(0);
         mSLideViewPager.addOnPageChangeListener(viewListener);
+        getSupportActionBar().hide();
 
     }
 

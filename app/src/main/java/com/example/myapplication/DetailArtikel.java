@@ -24,5 +24,6 @@ public class DetailArtikel extends AppCompatActivity {
                 startActivity(i);
             }
         });
+        getSupportActionBar().hide();
     }
 }

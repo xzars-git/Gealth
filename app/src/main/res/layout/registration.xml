@@ -47,19 +47,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:padding="10dp"
-                android:id="@+id/editText_namapengguna"
-                android:paddingStart="20dp"
-                android:hint="Nama Pengguna"
-                android:textSize="16sp"
-                android:fontFamily="@font/poppins_regular"
-                android:textColorHint="@color/softGrey"
-                android:textColor="@color/softGrey"
-                android:background="@drawable/ic_edittext_regis"/>
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:padding="10dp"
                 android:id="@+id/editText_namalengkap"
                 android:paddingStart="20dp"
                 android:textColor="@color/softGrey"
@@ -70,70 +57,6 @@
                 android:layout_marginTop="25dp"
                 android:background="@drawable/ic_edittext_regis"/>
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:orientation="horizontal">
-                <LinearLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="50dp"
-                    android:layout_weight="25"
-                    android:background="@drawable/ic_edittext_regis"
-                    android:layout_marginTop="25dp"
-                    android:orientation="horizontal">
-                    <NumberPicker
-                        android:layout_width="55dp"
-                        android:layout_height="50dp"
-                        android:id="@+id/numberPicker_tanggallahir"
-                        android:textColor="@color/softGrey"/>
-                    <ImageView
-                        android:layout_width="24dp"
-                        android:layout_height="match_parent"
-                        android:paddingRight="6dp"
-                        android:src="@drawable/ic_numberpicker_arrow"/>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="50dp"
-                    android:layout_weight="25"
-                    android:background="@drawable/ic_edittext_regis"
-                    android:layout_marginTop="25dp"
-                    android:layout_marginStart="15dp"
-                    android:orientation="horizontal">
-                    <NumberPicker
-                        android:layout_width="55dp"
-                        android:layout_height="50dp"
-                        android:id="@+id/numberPicker_bulanlahir"
-                        android:textColor="@color/softGrey"/>
-                    <ImageView
-                        android:layout_width="24dp"
-                        android:layout_height="match_parent"
-                        android:paddingRight="6dp"
-                        android:src="@drawable/ic_numberpicker_arrow"/>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="50dp"
-                    android:layout_weight="50"
-                    android:background="@drawable/ic_edittext_regis"
-                    android:layout_marginTop="25dp"
-                    android:layout_marginStart="15dp"
-                    android:orientation="horizontal">
-                    <NumberPicker
-                        android:layout_width="130dp"
-                        android:layout_height="50dp"
-                        android:id="@+id/numberPicker_tahunlahir"
-                        android:textColor="@color/softGrey"/>
-                    <ImageView
-                        android:layout_width="24dp"
-                        android:layout_height="match_parent"
-                        android:paddingRight="10dp"
-                        android:src="@drawable/ic_numberpicker_arrow"/>
-                </LinearLayout>
-            </LinearLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"

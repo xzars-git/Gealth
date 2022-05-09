@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".UpdateProfile"
+            android:exported="true" />
+        <activity
             android:name=".DetailArtikel"
             android:exported="true" />
         <activity
@@ -49,6 +52,13 @@
         <activity
             android:name=".Home"
             android:exported="true" />
+        <activity
+            android:name=".Profile"
+            android:exported="true" />
+        <activity android:name=".LinkApp"
+            android:exported="true"/>
+        <activity android:name=".BuatKataSandiBaru"
+            android:exported="true"/>
     </application>
 
 </manifest>

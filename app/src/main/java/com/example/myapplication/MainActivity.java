@@ -5,7 +5,9 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.view.Menu;
 
 import com.example.myapplication.databinding.ActivityMainBinding;
 
@@ -38,6 +40,8 @@ public class MainActivity extends AppCompatActivity {
 
             return true;
         });
+
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.green)));
     }
 
     private void replaceFragment(Fragment fragment){

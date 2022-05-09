@@ -93,6 +93,8 @@ public class Onboarding  extends AppCompatActivity {
 
         setUpIndicator(0);
         slideViewPager.addOnPageChangeListener(viewListener);
+
+        getSupportActionBar().hide();
     }
 
     @RequiresApi(api = Build.VERSION_CODES.M)

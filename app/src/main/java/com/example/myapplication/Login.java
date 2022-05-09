@@ -39,11 +39,18 @@ public class Login extends AppCompatActivity {
         progressDialog.setTitle("Loading");
         progressDialog.setMessage("Silahkan Tunggu!");
         progressDialog.setCancelable(false);
-
+        getSupportActionBar().hide();
         setOnClick();
     }
 
     void setOnClick(){
+        clickAble_TextViewLupaKataSandi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Login.this, BuatKataSandiBaru.class));
+            }
+        });
+
         clickAble_TextViewDaftar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

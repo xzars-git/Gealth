@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:fontFamily="@font/poppins_semibold"
-            android:text="Terapi mata"
+            android:text="Terapi"
             android:textColor="@color/darkGrey"
             android:textSize="20sp"></TextView>
         <ScrollView

@@ -59,6 +59,7 @@
         android:fontFamily="@font/poppins_regular"
         android:textSize="16sp"
         android:gravity="center"
+        android:textColor="@color/darkGrey"
         android:layout_gravity="right"
         android:layout_marginEnd="25dp"
         android:text="@string/lupa_katasandi" />

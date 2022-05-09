@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:id="@+id/notif"
+        android:title="Notification"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_bell"/>
+
+    <item app:showAsAction="always"
+        android:icon="@drawable/ic_settings"
+        android:title="">
+        <menu>
+            <item
+                android:id="@+id/profil"
+                android:title="Profil"
+                app:showAsAction="always"/>
+            <item
+                android:id="@+id/log_out"
+                android:title="Keluar"
+                android:iconTint="@color/redVelvet"
+                app:showAsAction="always"/>
+        </menu>
+    </item>
+
+
+</menu>

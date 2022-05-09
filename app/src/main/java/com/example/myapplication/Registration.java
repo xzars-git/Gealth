@@ -9,6 +9,7 @@ import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -23,21 +24,21 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.UserProfileChangeRequest;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.time.LocalDate;
 
 public class Registration extends AppCompatActivity {
 
-    EditText editText_namapengguna, editText_namalengkap, editText_email;
+    EditText editText_namalengkap, editText_email;
     TextView clickAble_TextViewLogin;
     TextInputEditText editText_password, editText_confirmpassword;
-    NumberPicker numberPicker_tanggallahir, numberPicker_bulanlahir, numberPicker_tahunlahir;
     Button btn_daftar;
-    LocalDate tanggalLahir;
-    String strTglLahir;
     private FirebaseAuth mAuth;
     ProgressDialog progressDialog;
-
+    /*DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReferenceFromUrl("https://gelth-7099c-default-rtdb.asia-southeast1.firebasedatabase.app/");
+*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,18 +50,22 @@ public class Registration extends AppCompatActivity {
         progressDialog.setMessage("Silahkan Tunggu!");
         progressDialog.setCancelable(false);
         onClick();
+        getSupportActionBar().hide();
+        clickAble_TextViewLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Registration.this, Login.class);
+                startActivity(i);
+            }
+        });
     }
 
     private void findById(){
-        editText_namapengguna = findViewById(R.id.editText_namapengguna);
         editText_namalengkap = findViewById(R.id.editText_namalengkap);
         editText_email = findViewById(R.id.editText_email);
         clickAble_TextViewLogin = findViewById(R.id.clickAble_TextViewLogin);
         editText_password = findViewById(R.id.editText_password);
         editText_confirmpassword= findViewById(R.id.editText_confirmpassword);
-        numberPicker_tanggallahir = findViewById(R.id.numberPicker_tanggallahir);
-        numberPicker_bulanlahir = findViewById(R.id.numberPicker_bulanlahir);
-        numberPicker_tahunlahir = findViewById(R.id.numberPicker_tahunlahir);
         btn_daftar = findViewById(R.id.btn_daftar);
     }
 
@@ -68,12 +73,21 @@ public class Registration extends AppCompatActivity {
         btn_daftar.setOnClickListener(new View.OnClickListener() {
             @RequiresApi(api = Build.VERSION_CODES.O)
             @Override
-            public void onClick(View view) {
-                if(editText_namapengguna.getText().length() > 0 && editText_namalengkap.getText().length() > 0 && editText_email.getText().length() > 0 && editText_password.getText().length() > 0 && editText_confirmpassword.getText().length() > 0 ){
+            public void onClick(View view) {/*
+                final String fullname = editText_namalengkap.getText().toString();
+                final String username = editText_namapengguna.getText().toString();
+                final String email = editText_email.getText().toString();
+                final String password = editText_password.getText().toString();
+                final String confirm_password = editText_confirmpassword.getText().toString();*/
+
+                if(editText_namalengkap.getText().length() > 0 && editText_email.getText().length() > 0 && editText_password.getText().length() > 0 && editText_confirmpassword.getText().length() > 0 ){
                     if(editText_password.getText().toString().equals(editText_confirmpassword.getText().toString())){
                         //tanggalLahir = LocalDate.of(numberPicker_tahunlahir.getValue(), numberPicker_bulanlahir.getValue(), numberPicker_tanggallahir.getValue());
                         //strTglLahir = tanggalLahir.toString();
-                        register(editText_namapengguna.getText().toString(), editText_email.getText().toString(), editText_namalengkap.getText().toString(), editText_password.getText().toString(), tanggalLahir);
+                        register(editText_email.getText().toString(), editText_namalengkap.getText().toString(), editText_password.getText().toString());
+             /*           databaseReference.child("users").child(email).child("username").setValue(username);
+                        databaseReference.child("users").child(email).child("fullname").setValue(fullname);
+                        databaseReference.child("password").child(email).child("password").setValue(password);*/
                     }else {
                         Toast.makeText(getApplicationContext(), "Silahkan masukan password yang sama!!!", Toast.LENGTH_SHORT).show();
                     }
@@ -86,7 +100,7 @@ public class Registration extends AppCompatActivity {
 
     }
 
-    private void register(String namaPengguna, String eMail, String namaLengkap, String password, LocalDate tanggalLahir){
+    private void register(String eMail, String namaLengkap, String password){
         progressDialog.show();
         mAuth.createUserWithEmailAndPassword(eMail,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @RequiresApi(api = Build.VERSION_CODES.O)
@@ -96,7 +110,7 @@ public class Registration extends AppCompatActivity {
                     FirebaseUser firebaseUser = task.getResult().getUser();
                     if(firebaseUser != null) {
                         UserProfileChangeRequest request = new UserProfileChangeRequest.Builder()
-                                .setDisplayName(namaPengguna)
+                                .setDisplayName(namaLengkap)
                                 .build();
                         firebaseUser.updateProfile(request).addOnCompleteListener(new OnCompleteListener<Void>() {
                             @Override

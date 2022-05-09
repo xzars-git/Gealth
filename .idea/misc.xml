@@ -39,8 +39,9 @@
         <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/layout/activity_selesai_terapi.xml" value="0.1640625" />
         <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/layout/activity_terapi.xml" value="0.21" />
         <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/layout/activity_terapi_mata.xml" value="0.13854166666666667" />
+        <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/layout/activity_update_profile.xml" value="0.25" />
         <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/layout/application.xml" value="0.25" />
-        <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/layout/fragment_aplikasi.xml" value="0.1078125" />
+        <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/layout/fragment_aplikasi.xml" value="0.33" />
         <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/layout/fragment_artikel.xml" value="0.22" />
         <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/layout/fragment_beranda.xml" value="0.2" />
         <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/layout/fragment_detail_artikel.xml" value="0.22" />
@@ -61,11 +62,14 @@
         <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/layout/onboarding3.xml" value="0.22" />
         <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/layout/onboardingsliderlayout.xml" value="0.21" />
         <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/layout/profil.xml" value="0.25" />
-        <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/layout/registration.xml" value="0.33" />
+        <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/layout/profile.xml" value="0.22" />
+        <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/layout/registration.xml" value="0.30218068535825543" />
+        <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/layout/slider_terapi_mata.xml" value="0.18070652173913043" />
         <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/layout/slider_terapi_tangan.xml" value="0.18478260869565216" />
         <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/layout/splashscreen.xml" value="0.1" />
         <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/menu/item_menu.xml" value="0.25" />
         <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/menu/nav.xml" value="0.16614583333333333" />
+        <entry key="..\:/Android Studio/FirstApp/Gealth GitHub/app/src/main/res/menu/setting_menu.xml" value="0.13177083333333334" />
         <entry key="..\:/Users/Sadid-PC/Documents/GitHub/Gealth/app/src/main/res/layout/activity_selesai_terapi.xml" value="0.1" />
         <entry key="..\:/Users/Sadid-PC/Documents/GitHub/Gealth/app/src/main/res/layout/activity_terapi.xml" value="0.1" />
         <entry key="..\:/Users/Sadid-PC/Documents/GitHub/Gealth/app/src/main/res/layout/activity_terapi_mata.xml" value="0.1" />
