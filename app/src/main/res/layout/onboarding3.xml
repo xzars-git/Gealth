@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/white"
     tools:context=".SplashScreen">
     <ImageView
         android:id="@+id/imageViewOnboarding1"
@@ -43,7 +44,6 @@
         android:fontFamily="@font/poppins_regular"
         android:textSize="16sp"
         android:textAlignment="center"
-        android:shadowColor="@color/darkGrey"
         android:layout_marginTop="20dp"/>
 
 

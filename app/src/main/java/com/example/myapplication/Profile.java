@@ -17,7 +17,7 @@ public class Profile extends AppCompatActivity {
 
     TextView  textView_namalengkap,textView_email;
     AppCompatImageButton btn_back;
-    Button btn_update;
+    Button btn_update, btn_ubahKataSandi;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +28,7 @@ public class Profile extends AppCompatActivity {
         textView_email = findViewById(R.id.textView_email);
         btn_back = findViewById(R.id.btn_back);
         btn_update = findViewById(R.id.btn_update);
+        btn_ubahKataSandi = findViewById(R.id.btn_ubahKataSandi);
 
         FirebaseAuth.getInstance().getCurrentUser().reload();
 
@@ -51,6 +52,14 @@ public class Profile extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(Profile.this, UpdateProfile.class);
+                startActivity(i);
+            }
+        });
+
+        btn_ubahKataSandi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Profile.this, BuatKataSandiBaru.class);
                 startActivity(i);
             }
         });

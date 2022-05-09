@@ -6,6 +6,7 @@ import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -22,7 +23,7 @@ import java.util.regex.Pattern;
 public class BuatKataSandiBaru extends AppCompatActivity {
 
     AppCompatImageButton backBtn;
-    TextInputEditText editText_email;
+    EditText editText_email;
     Button btn_simpan;
 
     FirebaseAuth auth;
@@ -32,7 +33,7 @@ public class BuatKataSandiBaru extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.lupapassword_input_email);
 
-        editText_email = (TextInputEditText) findViewById(R.id.editText_email);
+        editText_email = (EditText) findViewById(R.id.editText_email);
         btn_simpan = (Button) findViewById(R.id.btn_simpan);
         backBtn = (AppCompatImageButton) findViewById(R.id.backBtn);
 
@@ -77,7 +78,7 @@ public class BuatKataSandiBaru extends AppCompatActivity {
                 if(task.isSuccessful()){
                     Toast.makeText(BuatKataSandiBaru.this,"Silahkan cek e-mail anda, untuk mengganti password !!", Toast.LENGTH_LONG).show();
                 }else {
-                    Toast.makeText(BuatKataSandiBaru.this, "Silahkan ulangi !!!",Toast.LENGTH_LONG).show();
+                    Toast.makeText(BuatKataSandiBaru.this, "Cek E-mail Anda dan Silahkan Ulangi !!!",Toast.LENGTH_LONG).show();
                 }
             }
         });

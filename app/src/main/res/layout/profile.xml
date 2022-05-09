@@ -121,6 +121,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/ubahkatasandi"
+            android:id="@+id/btn_ubahKataSandi"
             android:textAllCaps="false"
             android:fontFamily="@font/poppins_regular"
             android:textSize="16dp"
